@@ -7,14 +7,24 @@ import Contact from './pages/Contact';
 const App = () => {
   const [visits, setVisits] = useState(0);
 
+  const navStyle = {
+    listStyle: 'none',
+    padding: 0,
+    display: 'flex'
+  };
+
+  const linkStyle = {
+    marginRight: '10px'
+  };
+
   return (
       <Router>
         <div>
           <nav>
-            <ul>
-              <li><Link to="/">Home</Link></li>
-              <li><Link to="/about">About</Link></li>
-              <li><Link to="/contact">Contact</Link></li>
+            <ul style={navStyle}>
+              <li style={linkStyle}><Link to="/">Home</Link></li>
+              <li style={linkStyle}><Link to="/about">About</Link></li>
+              <li style={{ marginRight: 0 }}><Link to="/contact">Contact</Link></li>
             </ul>
           </nav>
 

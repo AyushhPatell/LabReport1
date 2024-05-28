@@ -14,6 +14,7 @@ const Home = ({ visits, setVisits }) => {
         <div>
             <h1>Home Page</h1>
             <p>Home has been visited {visits} times.</p>
+            <p>Name: Ayush Patel</p>
             <p>Banner ID: B00951805</p>
         </div>
     );
